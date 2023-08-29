@@ -54,7 +54,7 @@
         </thead>
         <tbody>
             <?php 
-            $konek = mysqli_connect("localhost","root","","perpus")
+            $konek = mysqli_connect("localhost","root","","perpus");
             $orderids = mysqli_real_escape_string($conn, $orderids);
 			$query = "SELECT * FROM detail_pinjam d, produk p WHERE orderid='$orderids' AND d.idproduk=p.idproduk ORDER BY d.idproduk ASC";
 			$no=1;
